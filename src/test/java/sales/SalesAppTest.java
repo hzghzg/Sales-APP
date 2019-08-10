@@ -93,6 +93,12 @@ public class SalesAppTest {
 		Assert.assertEquals("Time",headers.get(3));
 	}
 
+	@Test
+	public void testGetHeaders_givenNotNatTrade_thenReturnHeaderIncludeLocalTime() {
+		List<String> headers=salesApp.getHeaders(isNatTrade);
+		Assert.assertEquals("Local Time",headers.get(3));
+	}
+
 
 
 	public Date getTomorrowTime(){
