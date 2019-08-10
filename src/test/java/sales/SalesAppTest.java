@@ -47,7 +47,12 @@ public class SalesAppTest {
 		Sales sales=new Sales();
 		when(salesDao.getSalesBySalesId(salesId)).thenReturn(sales);
 		Assert.assertEquals(sales,salesApp.getSales(salesId));
-
+	}
+	@Test
+	public void testGetSales_givenNotExistSalesId_thenReturnNull() {
+		String salesId="notExistSalesId";
+		when(salesDao.getSalesBySalesId(salesId)).thenReturn(null);
+		Assert.assertEquals(null,salesApp.getSales(salesId));
 	}
 
 }

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d377cee4-c279-4dbd-8533-bd163b1bc207" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d377cee4-c279-4dbd-8533-bd163b1bc207" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="279">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+            <state relative-caret-position="607">
+              <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -275,17 +273,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VipParkingStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesAppTest.testGetSales_givenNotExistSalesId_thenReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parking.*" />
+          <option name="PATTERN" value="sales.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parking" />
-      <option name="MAIN_CLASS_NAME" value="parking.VipParkingStrategyTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testGetSales_givenNotExistSalesId_thenReturnNull" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -293,10 +292,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SalesAppTest" />
+        <item itemvalue="JUnit.SalesAppTest.testGetSales_givenNotExistSalesId_thenReturnNull" />
         <item itemvalue="JUnit.SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" />
         <item itemvalue="JUnit.SalesAppTest.testGenerateReport_givenNullSalesId_thenGenerateReportNotBeCalled" />
         <item itemvalue="JUnit.SalesAppTest.testGenerateReport" />
-        <item itemvalue="JUnit.VipParkingStrategyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -314,9 +313,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SalesAppTest_testGenerateReport - 2019.08.10 at 18h 39m 55s.xml">
-      <configuration name="SalesAppTest.testGenerateReport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SalesAppTest_testGenerateReport - 2019.08.10 at 18h 40m 06s.xml">
       <configuration name="SalesAppTest.testGenerateReport" configurationId="JUnit" />
     </history-entry>
@@ -343,6 +339,9 @@
     </history-entry>
     <history-entry file="SalesAppTest_testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled - 2019.08.10 at 20h 04m 33s.xml">
       <configuration name="SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.10 at 20h 22m 53s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -598,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="279">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -608,8 +607,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="607">
+          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
