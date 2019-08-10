@@ -9,6 +9,8 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 import static org.mockito.Mockito.*;
 @RunWith(MockitoJUnitRunner.class)
@@ -54,5 +56,25 @@ public class SalesAppTest {
 		when(salesDao.getSalesBySalesId(salesId)).thenReturn(null);
 		Assert.assertEquals(null,salesApp.getSales(salesId));
 	}
+	@Test
+	public void testIsEffectiveDate_givenEffectiveSales_thenReturnTrue() {
+		Sales sales=mock(Sales.class);
+		Date tomorrowTime=getTomorrowTime();
+		Date yesterdayTime=getYesterdayTime();
+		when(sales.getEffectiveTo()).thenReturn(tomorrowTime);
+		when(sales.getEffectiveFrom()).thenReturn(yesterdayTime);
+		Assert.assertEquals(true,salesApp.isEffectiveDate(sales));
+	}
+	public Date getTomorrowTime(){
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.DAY_OF_MONTH,+1);
+		return calendar.getTime();
+	}
+	public Date getYesterdayTime(){
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.DAY_OF_MONTH,-1);
+		return calendar.getTime();
+	}
+
 
 }
