@@ -19,6 +19,8 @@ public class SalesAppTest {
 	private boolean isNatTrade=false;
 	@Mock
 	private SalesDao salesDao;
+	@Mock
+	private Sales sales;
 	@InjectMocks
 	private SalesApp salesApp;
 	@Test
@@ -56,13 +58,20 @@ public class SalesAppTest {
 		when(salesDao.getSalesBySalesId(salesId)).thenReturn(null);
 		Assert.assertEquals(null,salesApp.getSales(salesId));
 	}
+//	@Test
+//	public void testIsEffectiveDate_givenEffectiveSales_thenReturnFalse() {
+//		Date tomorrowTime=getTomorrowTime();
+//		Date yesterdayTime=getYesterdayTime();
+//		when(sales.getEffectiveTo()).thenReturn(tomorrowTime);
+//		when(sales.getEffectiveFrom()).thenReturn(yesterdayTime);
+//		Assert.assertEquals(false,salesApp.isEffectiveDate(sales));
+//	}
 	@Test
-	public void testIsEffectiveDate_givenEffectiveSales_thenReturnTrue() {
-		Sales sales=mock(Sales.class);
+	public void testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue() {
 		Date tomorrowTime=getTomorrowTime();
 		Date yesterdayTime=getYesterdayTime();
-		when(sales.getEffectiveTo()).thenReturn(tomorrowTime);
-		when(sales.getEffectiveFrom()).thenReturn(yesterdayTime);
+		when(sales.getEffectiveTo()).thenReturn(yesterdayTime);
+		when(sales.getEffectiveFrom()).thenReturn(tomorrowTime);
 		Assert.assertEquals(true,salesApp.isEffectiveDate(sales));
 	}
 	public Date getTomorrowTime(){

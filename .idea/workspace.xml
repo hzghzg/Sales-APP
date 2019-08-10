@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d377cee4-c279-4dbd-8533-bd163b1bc207" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="533">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/src/main/java/parking/VipParkingStrategy.java" />
         <option value="$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyJMockitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" />
         <option value="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" />
       </list>
     </option>
   </component>
@@ -228,38 +228,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalesAppTest.testGetSales_givenNotExistSalesId_thenReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="testGetSales_givenNotExistSalesId_thenReturnNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -292,13 +260,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sales.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sales.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SalesAppTest" />
-        <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" />
         <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" />
-        <item itemvalue="JUnit.SalesAppTest.testGetSales_givenNotExistSalesId_thenReturnNull" />
-        <item itemvalue="JUnit.SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" />
+        <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" />
+        <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" />
+        <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse" />
       </list>
     </recent_temporary>
   </component>
@@ -316,35 +316,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SalesAppTest_testGenerateReport - 2019.08.10 at 18h 44m 09s.xml">
-      <configuration name="SalesAppTest.testGenerateReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGenerateReport - 2019.08.10 at 18h 45m 57s.xml">
-      <configuration name="SalesAppTest.testGenerateReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGenerateReport_givenNullSalesId_thenGenerateReportNotBeCalled - 2019.08.10 at 19h 38m 40s.xml">
-      <configuration name="SalesAppTest.testGenerateReport_givenNullSalesId_thenGenerateReportNotBeCalled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled - 2019.08.10 at 20h 00m 10s.xml">
-      <configuration name="SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled - 2019.08.10 at 20h 01m 18s.xml">
-      <configuration name="SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled - 2019.08.10 at 20h 04m 33s.xml">
-      <configuration name="SalesAppTest.testGenerateReport_givenSalesIdAndIsNatTrade_thenGenerateReportBeCalled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest - 2019.08.10 at 20h 22m 53s.xml">
-      <configuration name="SalesAppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_givenNotExistSalesId_thenReturnNull - 2019.08.10 at 20h 28m 52s.xml">
-      <configuration name="SalesAppTest.testGetSales_givenNotExistSalesId_thenReturnNull" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest - 2019.08.10 at 20h 28m 57s.xml">
-      <configuration name="SalesAppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnFalse - 2019.08.10 at 20h 48m 52s.xml">
       <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnTrue - 2019.08.10 at 21h 06m 53s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnTrue - 2019.08.10 at 21h 07m 09s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.10 at 21h 07m 15s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse - 2019.08.10 at 21h 09m 16s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse - 2019.08.10 at 21h 10m 58s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnTrue - 2019.08.10 at 21h 11m 01s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnFalse - 2019.08.10 at 21h 14m 44s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue - 2019.08.10 at 21h 14m 52s.xml">
+      <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.10 at 21h 17m 53s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -600,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -610,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="533">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
