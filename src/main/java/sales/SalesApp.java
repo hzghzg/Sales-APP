@@ -7,7 +7,7 @@ import java.util.List;
 public class SalesApp {
 	private SalesDao salesDao;
 	private SalesReportDao salesReportDao;
-	public void generateSalesActivityReport(String salesId, int maxRow, boolean isNatTrade, boolean isSupervisor) {
+	public void generateSalesActivityReport(String salesId, boolean isNatTrade) {
 
 		if (salesId == null) return;
 		Sales sales = getSales(salesId);
@@ -20,8 +20,7 @@ public class SalesApp {
 
 		SalesActivityReport report = this.generateReport(headers, reportDataList);
 
-		EcmService ecmService = new EcmService();
-		ecmService.uploadDocument(report.toXml());
+		uploadDocument(report);
 
 	}
 
@@ -49,6 +48,11 @@ public class SalesApp {
 			headers = Arrays.asList("Sales ID", "Sales Name", "Activity", "Local Time");
 		}
 		return headers;
+	}
+
+	public void uploadDocument(SalesActivityReport report) {
+		EcmService ecmService = new EcmService();
+		ecmService.uploadDocument(report.toXml());
 	}
 
 	public SalesActivityReport generateReport(List<String> headers, List<SalesReportData> reportDataList) {
