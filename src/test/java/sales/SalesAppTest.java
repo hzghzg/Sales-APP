@@ -11,6 +11,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import static org.mockito.Mockito.*;
 @RunWith(MockitoJUnitRunner.class)
@@ -21,6 +22,8 @@ public class SalesAppTest {
 	private SalesDao salesDao;
 	@Mock
 	private Sales sales;
+	@Mock
+	private SalesReportDao salesReportDao;
 	@InjectMocks
 	private SalesApp salesApp;
 	@Test
@@ -74,6 +77,15 @@ public class SalesAppTest {
 		when(sales.getEffectiveFrom()).thenReturn(tomorrowTime);
 		Assert.assertEquals(true,salesApp.isEffectiveDate(sales));
 	}
+
+	@Test
+	public void testGetSalesReportData_givenEffectiveSales_thenReturnSalesReportDataList() {
+		Sales sales=new Sales();
+		List<SalesReportData> salesReportDataList=new ArrayList<>();
+		when(salesReportDao.getReportData(sales)).thenReturn(salesReportDataList);
+		Assert.assertEquals(salesReportDataList,salesApp.getSalesReportData(sales));
+	}
+
 	public Date getTomorrowTime(){
 		Calendar calendar = Calendar.getInstance();
 		calendar.set(Calendar.DAY_OF_MONTH,+1);
