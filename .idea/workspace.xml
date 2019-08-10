@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d377cee4-c279-4dbd-8533-bd163b1bc207" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sales/SalesAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sales/SalesAppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+            <state relative-caret-position="218">
+              <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1661">
-              <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+            <state relative-caret-position="1819">
+              <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,22 +261,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -291,13 +277,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SalesAppTest.testUploadDocument_givenSalesActivityReport_thenToXmlBeCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sales.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testUploadDocument_givenSalesActivityReport_thenToXmlBeCall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SalesAppTest" />
+        <item itemvalue="JUnit.SalesAppTest.testUploadDocument_givenSalesActivityReport_thenToXmlBeCall" />
         <item itemvalue="JUnit.SalesAppTest.testGetSalesReportData_givenEffectiveSales_thenReturnSalesReportDataList" />
         <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" />
         <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" />
-        <item itemvalue="JUnit.SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -315,21 +317,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SalesAppTest_testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse - 2019.08.10 at 21h 10m 58s.xml">
-      <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnfalse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnTrue - 2019.08.10 at 21h 11m 01s.xml">
-      <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnFalse - 2019.08.10 at 21h 14m 44s.xml">
-      <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue - 2019.08.10 at 21h 14m 52s.xml">
-      <configuration name="SalesAppTest.testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest - 2019.08.10 at 21h 17m 53s.xml">
-      <configuration name="SalesAppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SalesAppTest_testIsEffectiveDate_givenEffectiveSales_thenReturnFalse - 2019.08.10 at 21h 20m 41s.xml">
       <configuration name="SalesAppTest.testIsEffectiveDate_givenEffectiveSales_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
@@ -343,6 +330,21 @@
       <configuration name="SalesAppTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SalesAppTest - 2019.08.10 at 21h 39m 42s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.10 at 21h 41m 03s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testUploadDocument_givenSalesActivityReport_thenToXmlBeCall - 2019.08.10 at 21h 49m 24s.xml">
+      <configuration name="SalesAppTest.testUploadDocument_givenSalesActivityReport_thenToXmlBeCall" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testUploadDocument_givenSalesActivityReport_thenToXmlBeCall - 2019.08.10 at 21h 52m 27s.xml">
+      <configuration name="SalesAppTest.testUploadDocument_givenSalesActivityReport_thenToXmlBeCall" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testUploadDocument_givenSalesActivityReport_thenToXmlBeCall - 2019.08.10 at 21h 52m 50s.xml">
+      <configuration name="SalesAppTest.testUploadDocument_givenSalesActivityReport_thenToXmlBeCall" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.10 at 21h 53m 08s.xml">
       <configuration name="SalesAppTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -562,24 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sales/EcmService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/Sales.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesActivityReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -597,10 +585,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesActivityReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sales/EcmService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        <state relative-caret-position="218">
+          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -609,8 +611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1661">
-          <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+        <state relative-caret-position="1819">
+          <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

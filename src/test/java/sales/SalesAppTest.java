@@ -99,7 +99,13 @@ public class SalesAppTest {
 		Assert.assertEquals("Local Time",headers.get(3));
 	}
 
-
+	@Test
+	public void testUploadDocument_givenSalesActivityReport_thenToXmlBeCall() {
+		SalesActivityReport report=mock(SalesActivityReport.class);
+		when(report.toXml()).thenReturn("something");
+		salesApp.uploadDocument(report);
+		verify(report,times(1)).toXml();
+	}
 
 	public Date getTomorrowTime(){
 		Calendar calendar = Calendar.getInstance();
