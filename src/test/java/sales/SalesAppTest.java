@@ -86,6 +86,15 @@ public class SalesAppTest {
 		Assert.assertEquals(salesReportDataList,salesApp.getSalesReportData(sales));
 	}
 
+	@Test
+	public void testGetHeaders_givenNatTrade_thenReturnHeaderIncludeTime() {
+		boolean isNatTrade=true;
+		List<String> headers=salesApp.getHeaders(isNatTrade);
+		Assert.assertEquals("Time",headers.get(3));
+	}
+
+
+
 	public Date getTomorrowTime(){
 		Calendar calendar = Calendar.getInstance();
 		calendar.set(Calendar.DAY_OF_MONTH,+1);
