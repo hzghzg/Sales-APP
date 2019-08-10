@@ -7,15 +7,14 @@ import java.util.List;
 public class SalesApp {
 	private SalesDao salesDao;
 	private SalesReportDao salesReportDao;
-	private Sales sales;
 	public void generateSalesActivityReport(String salesId, boolean isNatTrade) {
 
 		if (salesId == null) return;
-		this.sales = getSales(salesId);
+		Sales sales = getSales(salesId);
 
-		if (isEffectiveDate(this.sales)) return;
+		if (isEffectiveDate(sales)) return;
 
-		List<SalesReportData> reportDataList = getSalesReportData(this.sales);
+		List<SalesReportData> reportDataList = getSalesReportData(sales);
 
 		List<String> headers = getHeaders(isNatTrade);
 

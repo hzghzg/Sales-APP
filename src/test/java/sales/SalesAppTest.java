@@ -21,8 +21,6 @@ public class SalesAppTest {
 	@Mock
 	private SalesDao salesDao;
 	@Mock
-	private Sales sales;
-	@Mock
 	private SalesReportDao salesReportDao;
 	@InjectMocks
 	private SalesApp salesApp;
@@ -61,20 +59,28 @@ public class SalesAppTest {
 		when(salesDao.getSalesBySalesId(salesId)).thenReturn(null);
 		Assert.assertEquals(null,salesApp.getSales(salesId));
 	}
-//	@Test
-//	public void testIsEffectiveDate_givenEffectiveSales_thenReturnFalse() {
-//		Date tomorrowTime=getTomorrowTime();
-//		Date yesterdayTime=getYesterdayTime();
-//		when(sales.getEffectiveTo()).thenReturn(tomorrowTime);
-//		when(sales.getEffectiveFrom()).thenReturn(yesterdayTime);
-//		Assert.assertEquals(false,salesApp.isEffectiveDate(sales));
-//	}
+	@Test
+	public void testIsEffectiveDate_givenEffectiveSales_thenReturnFalse() {
+		Sales sales=mock(Sales.class);
+		Date tomorrowTime=getTomorrowTime();
+		Date yesterdayTime=getYesterdayTime();
+		when(sales.getEffectiveTo()).thenReturn(tomorrowTime);
+		when(sales.getEffectiveFrom()).thenReturn(yesterdayTime);
+		salesApp.isEffectiveDate(sales);
+		verify(sales,times(1)).getEffectiveFrom();
+		verify(sales,times(1)).getEffectiveTo();
+		Assert.assertEquals(false,salesApp.isEffectiveDate(sales));
+	}
 	@Test
 	public void testIsEffectiveDate_givenNotEffectiveSales_thenReturnTrue() {
+		Sales sales=mock(Sales.class);
 		Date tomorrowTime=getTomorrowTime();
 		Date yesterdayTime=getYesterdayTime();
 		when(sales.getEffectiveTo()).thenReturn(yesterdayTime);
 		when(sales.getEffectiveFrom()).thenReturn(tomorrowTime);
+		salesApp.isEffectiveDate(sales);
+		verify(sales,times(0)).getEffectiveFrom();
+		verify(sales,times(1)).getEffectiveTo();
 		Assert.assertEquals(true,salesApp.isEffectiveDate(sales));
 	}
 
@@ -109,12 +115,12 @@ public class SalesAppTest {
 
 	public Date getTomorrowTime(){
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.DAY_OF_MONTH,+1);
+		calendar.add(Calendar.DATE, +1);
 		return calendar.getTime();
 	}
 	public Date getYesterdayTime(){
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.DAY_OF_MONTH,-1);
+		calendar.add(Calendar.DATE, -1);
 		return calendar.getTime();
 	}
 
