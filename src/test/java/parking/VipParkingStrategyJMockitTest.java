@@ -35,7 +35,7 @@ public class VipParkingStrategyJMockitTest {
 
         /* Exercise 6: Write test case for VipParkingStrategy calculateHourlyPrice
          * by using JMockit to mock static method */
-        new mockit.MockUp<Calendar>(){
+        new mockit.MockUp<ParkingLot>(){
             @mockit.Mock
             public int getBasicHourlyPrice(){
                 return 20;
